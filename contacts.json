@@ -1,0 +1,23 @@
+{
+    "contact" : {
+        "firstName" : "Darin",
+        "lastName" : "Nielsen",
+        "email" : "dn@gmail.com",
+        "favoriteColor" : "Blue",
+        "birthday" : "06/11/1998"
+    },
+    "contact2" : {
+        "firstName" : "Tyler",
+        "lastName" : "Lewis",
+        "email" : "tylewis@outlook.com",
+        "favoriteColor" : "Red",
+        "birthday" : "11/17/1998"
+    },
+    "contact3" : {
+        "firstName" : "Eric",
+        "lastName" : "Draven",
+        "email" : "edraven@outlook.com",
+        "favoriteColor" : "Black",
+        "birthday" : "02/14/1989"
+    }
+}
