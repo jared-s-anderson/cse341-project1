@@ -9,3 +9,15 @@ GET http://localhost:8080/contacts/626c799c00d997e84ffc3567
 
 ###
 GET http://localhost:8080/contacts/626c799c00d997e84ffc3568
+
+###
+GET https://cse341-contacts-ja.herokuapp.com/contacts
+
+###
+GET https://cse341-contacts-ja.herokuapp.com/contacts/626c799c00d997e84ffc3566
+
+###
+GET https://cse341-contacts-ja.herokuapp.com/contacts/626c799c00d997e84ffc3567
+
+###
+GET https://cse341-contacts-ja.herokuapp.com/contacts/626c799c00d997e84ffc3568
