@@ -1,6 +1,7 @@
 const mongodb = require('../db/connect');
 const ObjectId = require('mongodb').ObjectId;
 
+// This gets all of the contacts.
 const retrieveAll = async (req, res) => {
   const result = await mongodb.getDb().db().collection('contacts').find();
   result.toArray().then((lists) => {
@@ -9,6 +10,7 @@ const retrieveAll = async (req, res) => {
   });
 };
 
+// This gets on of the contacts.
 const retrieveSingle = async (req, res) => {
   const userId = new ObjectId(req.params.id);
   const result = await mongodb.getDb().db().collection('contacts').find({ _id: userId });
@@ -18,6 +20,7 @@ const retrieveSingle = async (req, res) => {
   });
 };
 
+// This creates a contact.
 const createContact = async (req, res) => {
   const newContact = {
     firstName: req.body.firstName,
@@ -34,6 +37,7 @@ const createContact = async (req, res) => {
   }
 };
 
+// This updates a contact.
 const updateContact = async (req, res) => {
   const userId = new ObjectId(req.params.id);
   const existingContact = {
@@ -56,6 +60,7 @@ const updateContact = async (req, res) => {
   }
 };
 
+// This deletes one of the contacts.
 const deleteContact = async (req, res) => {
   const userId = new ObjectId(req.params.id);
   const response = await mongodb
@@ -71,4 +76,24 @@ const deleteContact = async (req, res) => {
   }
 };
 
-module.exports = { retrieveAll, retrieveSingle, createContact, updateContact, deleteContact };
+// To go above and beyond, I decided to add another delete option.
+const deleteAll = async (req, res) => {
+  const response = await mongodb.getDb().db().collection('contacts').deleteMany({}, true);
+  console.log(response);
+  if (response.deletedCount > 0) {
+    res.status(204).send();
+  } else {
+    res
+      .status(500)
+      .json(response.error || 'An error occurred while trying to delete all of the contacts.');
+  }
+};
+
+module.exports = {
+  retrieveAll,
+  retrieveSingle,
+  createContact,
+  updateContact,
+  deleteContact,
+  deleteAll
+};

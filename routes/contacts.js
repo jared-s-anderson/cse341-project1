@@ -18,4 +18,7 @@ routes.put('/:id', controllerContacts.updateContact);
 // This put request deletes an existing contact.
 routes.delete('/:id', controllerContacts.deleteContact);
 
+// This delete request deletes all of the contacts.
+routes.delete('/', controllerContacts.deleteAll);
+
 module.exports = routes;
