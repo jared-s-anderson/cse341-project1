@@ -74,4 +74,4 @@ Content-Type: application/json
 DELETE https://cse341-contacts-ja.herokuapp.com/contacts/62759ad8badc3edb95d5780a HTTP/1.1
 
 ### The deletes all of the contacts.
-DELETE https://cse341-contacts-ja.herokuapp.com/contacts
+DELETE https://cse341-contacts-ja.herokuapp.com/contacts HTTP/1.1
