@@ -5,7 +5,8 @@ const doc = {
     title: 'Contacts API',
     description: 'List of contacts'
   },
-  host: 'localhost:8080',
+  // This can be switched to localhost 8080.
+  host: 'cse341-contacts-ja.herokuapp.com',
   schemes: ['http', 'https']
 };
 
