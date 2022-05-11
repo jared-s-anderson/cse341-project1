@@ -1,40 +1,38 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Contacts",
-    "description": "This is a contacts API.",
+    "title": "Contacts API",
+    "description": "List of contacts",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "cse341-contacts-ja.herokuapp.com",
   "basePath": "/",
-  "schemes": ["http", "https"],
-  "tags": [
-    {
-      "name": "Contacts",
-      "description": "List of contacts"
-    }
+  "schemes": [
+    "http",
+    "https"
   ],
   "paths": {
+    "/api-docs": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
     "/contacts/": {
       "get": {
-        "tags": ["Contacts"],
         "description": "",
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
-          },
-          "404": {
-            "description": "Not Found"
-          },
-          "500": {
-            "description": "Internal Sever Error"
           }
         }
       },
       "post": {
-        "tags": ["Contacts"],
         "description": "",
         "parameters": [
           {
@@ -72,7 +70,6 @@
         }
       },
       "delete": {
-        "tags": ["Contacts"],
         "description": "",
         "parameters": [],
         "responses": {
@@ -87,9 +84,10 @@
     },
     "/contacts/{id}": {
       "get": {
-        "tags": ["Contacts"],
         "description": "",
-        "produces": ["application/json"],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -105,7 +103,6 @@
         }
       },
       "put": {
-        "tags": ["Contacts"],
         "description": "",
         "parameters": [
           {
@@ -149,7 +146,6 @@
         }
       },
       "delete": {
-        "tags": ["Contacts"],
         "description": "",
         "parameters": [
           {
