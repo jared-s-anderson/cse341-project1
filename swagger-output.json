@@ -2,29 +2,24 @@
   "swagger": "2.0",
   "info": {
     "title": "Contacts API",
-    "description": "List of contacts",
+    "description": "This API is used to get contact information.",
     "version": "1.0.0"
   },
   "host": "cse341-contacts-ja.herokuapp.com",
   "basePath": "/",
-  "schemes": [
-    "http",
-    "https"
+  "schemes": ["http", "https"],
+  "tags": [
+    {
+      "name": "Contacts",
+      "description": "Request Methods"
+    }
   ],
   "paths": {
-    "/api-docs": {
-      "get": {
-        "description": "",
-        "parameters": [],
-        "responses": {}
-      }
-    },
     "/contacts/": {
       "get": {
+        "tags": ["Contacts"],
         "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [],
         "responses": {
           "200": {
@@ -33,6 +28,7 @@
         }
       },
       "post": {
+        "tags": ["Contacts"],
         "description": "",
         "parameters": [
           {
@@ -54,6 +50,15 @@
                   "example": "any"
                 },
                 "birthday": {
+                  "example": "any"
+                },
+                "favoriteFood": {
+                  "example": "any"
+                },
+                "favoriteMovie": {
+                  "example": "any"
+                },
+                "favoriteBook": {
                   "example": "any"
                 }
               }
@@ -70,6 +75,7 @@
         }
       },
       "delete": {
+        "tags": ["Contacts"],
         "description": "",
         "parameters": [],
         "responses": {
@@ -84,10 +90,9 @@
     },
     "/contacts/{id}": {
       "get": {
+        "tags": ["Contacts"],
         "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [
           {
             "name": "id",
@@ -103,6 +108,7 @@
         }
       },
       "put": {
+        "tags": ["Contacts"],
         "description": "",
         "parameters": [
           {
@@ -131,6 +137,15 @@
                 },
                 "birthday": {
                   "example": "any"
+                },
+                "favoriteFood": {
+                  "example": "any"
+                },
+                "favoriteMovie": {
+                  "example": "any"
+                },
+                "favoriteBook": {
+                  "example": "any"
                 }
               }
             }
@@ -146,6 +161,7 @@
         }
       },
       "delete": {
+        "tags": ["Contacts"],
         "description": "",
         "parameters": [
           {

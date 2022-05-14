@@ -15,7 +15,10 @@ Content-Type: application/json
     "lastName": "Simmons",
     "email": "asimmons@outlook.com",
     "favoriteColor": "Black",
-    "birthday": "05/01/1992" 
+    "birthday": "05/01/1992",
+    "favoriteFood": "Steak",
+    "favoriteMovie": "Spawn",
+    "favoriteBook": "Spawn" 
 }
 
 ### This updates an existing contact.
@@ -27,7 +30,10 @@ Content-Type: application/json
     "lastName": "Anderson",
     "email": "tanderson@gmail.com",
     "favoriteColor": "Red",
-    "birthday": "09/02/1964"
+    "birthday": "09/02/1964",
+    "favoriteFood": "Tacos",
+    "favoriteMovie": "The Matrix",
+    "favoriteBook": "Inheritance"
 }
 
 ### This deletes an existing contact.
@@ -55,7 +61,10 @@ Content-Type: application/json
     "lastName": "Simmons",
     "email": "asimmons@outlook.com",
     "favoriteColor": "Black",
-    "birthday": "05/01/1992" 
+    "birthday": "05/01/1992",
+    "favoriteFood": "Steak",
+    "favoriteMovie": "Spawn",
+    "favoriteBook": "Spawn" 
 }
 
 ### This updates an existing contact.
@@ -67,7 +76,10 @@ Content-Type: application/json
     "lastName": "Anderson",
     "email": "tanderson@gmail.com",
     "favoriteColor": "Red",
-    "birthday": "09/02/1964"
+    "birthday": "09/02/1964",
+    "favoriteFood": "Pork Chops",
+    "favoriteMovie": "The Matrix",
+    "favoriteBook": "Eragon"
 }
 
 ### This deletes an existing contact.
