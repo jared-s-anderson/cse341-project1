@@ -21,10 +21,6 @@ app
   })
   .use('/', require('./routes'));
 
-// app.listen(port, () => {
-//     console.log(`Example app listening on port ${port}`);
-// });
-
 mongodb.initDb((err) => {
   if (err) {
     console.log(err);
