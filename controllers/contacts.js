@@ -10,7 +10,7 @@ const retrieveAll = async (req, res) => {
   });
 };
 
-// This gets on of the contacts.
+// This gets one of the contacts.
 const retrieveSingle = async (req, res) => {
   const userId = new ObjectId(req.params.id);
   const result = await mongodb.getDb().db().collection('contacts').find({ _id: userId });
