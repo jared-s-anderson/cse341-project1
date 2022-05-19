@@ -15,7 +15,7 @@ routes.post('/', controllerContacts.createContact);
 // This put request updates an exisiting contact.
 routes.put('/:id', controllerContacts.updateContact);
 
-// This put request deletes an existing contact.
+// This delete request deletes an existing contact.
 routes.delete('/:id', controllerContacts.deleteContact);
 
 // This delete request deletes all of the contacts.
